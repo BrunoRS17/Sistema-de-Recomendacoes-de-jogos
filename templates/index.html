@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações de Jogos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Recomendações de Jogos</h1>
+
+<!-- Formulário para o usuário inserir o índice -->
+<form method="POST">
+    <label for="user_select">Escolha um usuário (1 a 9): </label>
+    <select name="user_select" id="user_select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+    </select>
+    <button type="submit">Mostrar Recomendações</button>
+</form>
+
+<div class="recommendations">
+    <h2>Jogos Recomendados:</h2>
+    {% for game in recommended_games %}
+        <div class="recommendation-item">
+            <p>{{ game }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="evaluated-games">
+    <h2>Jogos Avaliados pelo Usuário Selecionado:</h2>
+    {% for game in evaluated_games %}
+    <center>
+        <div class="evaluated-item">
+            <p>{{ game }}</p>
+        </div>
+    </center>
+    {% endfor %}
+</div>
+
+</body>
+</html>

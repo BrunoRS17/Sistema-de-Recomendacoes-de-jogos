@@ -1,0 +1,40 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendation-item, .evaluated-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.recommendation-item:hover, .evaluated-item:hover {
+    background-color: #f0f0f0;
+}
+
+.evaluated-games {
+    margin-top: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
