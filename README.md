@@ -1,14 +1,22 @@
 Sistema de Recomendação de Jogos
+
 Este é um projeto de um sistema de recomendação de jogos baseado nas avaliações de usuários. Utilizando técnicas de Recomendação e Machine Learning, o sistema sugere jogos que um usuário possa gostar, com base nas avaliações de outros usuários. Ele também permite que o usuário veja os jogos que já avaliou e escolha qual usuário ele deseja visualizar para obter suas recomendações.
 
 Tecnologias Utilizadas
+
 Python: A linguagem principal para o desenvolvimento do sistema.
+
 Flask: Framework web utilizado para criar o backend e servir a aplicação.
+
 Pandas: Biblioteca para manipulação e análise de dados, utilizada para trabalhar com as avaliações dos usuários.
+
 Scikit-Learn: Biblioteca para Machine Learning, usada para calcular a similaridade entre usuários utilizando o algoritmo Cosine Similarity.
+
 HTML: Linguagem de marcação usada para estruturar as páginas da web.
+
 CSS: Usado para o estilo visual da aplicação.
-JavaScript: Utilizado para interatividade na página.
+
+
 Funcionalidade
 O sistema permite que o usuário:
 
